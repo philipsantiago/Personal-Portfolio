@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heat Sink Design Project - John Smith</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .project-detail {
+            padding-top: 100px;
+            min-height: 100vh;
+        }
+
+        .project-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 0;
+            margin-bottom: 3rem;
+        }
+
+        .project-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .project-body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem 4rem;
+        }
+
+        .project-body h2 {
+            font-size: 2rem;
+            margin: 2.5rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        .project-body h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
+        }
+
+        .project-body p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-body ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .project-body li {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 0.5rem;
+        }
+
+        .image-placeholder {
+            background: var(--background-alt);
+            border: 2px dashed var(--border-color);
+            border-radius: 12px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem 0;
+            color: var(--text-secondary);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: var(--background-alt);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: block;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-button:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">JS</div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="project-detail">
+        <div class="project-header">
+            <div class="container">
+                <a href="index.html#projects" class="back-button" style="color: white; opacity: 0.9;">
+                    ← Back to Projects
+                </a>
+                <h1>Advanced Heat Sink Design for High-Performance Computing</h1>
+                <p>Thermal management solution for next-generation server processors</p>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <strong>Duration:</strong> 8 months
+                    </div>
+                    <div class="meta-item">
+                        <strong>Role:</strong> Lead Thermal Engineer
+                    </div>
+                    <div class="meta-item">
+                        <strong>Industry:</strong> Data Center Hardware
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-body">
+            <h2>Project Overview</h2>
+            <p>This project focused on developing an innovative heat sink architecture for next-generation server processors with unprecedented thermal design power (TDP) requirements. The challenge was to create a solution that could efficiently dissipate 350W of heat in a highly constrained space while meeting strict acoustic and cost targets.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-value">28%</span>
+                    <span class="stat-label">Thermal Resistance Improvement</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">15%</span>
+                    <span class="stat-label">Cost Reduction</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">12%</span>
+                    <span class="stat-label">Weight Reduction</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">350W</span>
+                    <span class="stat-label">Heat Dissipation</span>
+                </div>
+            </div>
+
+            <h2>Technical Challenge</h2>
+            <p>The primary challenge was to design a heat sink that could:</p>
+            <ul>
+                <li>Dissipate 350W thermal load efficiently</li>
+                <li>Maintain processor junction temperature below 85°C under worst-case conditions</li>
+                <li>Fit within a 40mm height constraint in 1U server chassis</li>
+                <li>Operate within 45 dBA acoustic limit</li>
+                <li>Reduce manufacturing cost compared to previous generation</li>
+                <li>Support high-velocity airflow (15 CFM minimum) with minimal pressure drop</li>
+            </ul>
+
+            <div class="image-placeholder">
+                <p>Heat Sink CAD Model Rendering</p>
+            </div>
+
+            <h2>Design Approach</h2>
+
+            <h3>1. Computational Analysis</h3>
+            <p>I began with comprehensive CFD simulations using ANSYS Fluent to model airflow patterns and heat transfer characteristics. Multiple fin geometries were evaluated, including:</p>
+            <ul>
+                <li>Straight fins with varying pitch and thickness</li>
+                <li>Pin fin arrays with optimized spacing</li>
+                <li>Hybrid designs combining multiple geometries</li>
+                <li>Novel turbulence-inducing features for enhanced convection</li>
+            </ul>
+
+            <h3>2. Optimization Process</h3>
+            <p>Using MATLAB scripts integrated with ANSYS, I conducted parametric studies across 200+ design variations. Key parameters optimized included:</p>
+            <ul>
+                <li>Fin height, thickness, and spacing</li>
+                <li>Base plate thickness and material</li>
+                <li>Fin profile geometry (straight, curved, offset)</li>
+                <li>Surface area to pressure drop ratio</li>
+            </ul>
+
+            <div class="image-placeholder">
+                <p>CFD Analysis Results - Temperature Distribution</p>
+            </div>
+
+            <h3>3. Material Selection</h3>
+            <p>After thermal analysis, I evaluated materials balancing thermal conductivity, weight, and cost:</p>
+            <ul>
+                <li>Aluminum 6063-T5 for fin array (excellent formability and thermal performance)</li>
+                <li>Copper base plate for maximum heat spreading</li>
+                <li>Optimized copper-to-aluminum interface with brazed joint</li>
+            </ul>
+
+            <h2>Manufacturing Considerations</h2>
+            <p>Working closely with manufacturing partners, I designed the heat sink for efficient production:</p>
+            <ul>
+                <li>Skived fin manufacturing process for tight tolerances</li>
+                <li>Vacuum brazing for copper-aluminum joint integrity</li>
+                <li>CNC machining for base flatness within 25 microns</li>
+                <li>Simplified assembly with 30% fewer components than baseline</li>
+            </ul>
+
+            <h2>Testing and Validation</h2>
+            <p>Extensive validation testing confirmed design performance:</p>
+            <ul>
+                <li>Thermal resistance measured at 0.095 °C/W (28% better than target)</li>
+                <li>Junction temperature maintained at 82°C under 350W load</li>
+                <li>Acoustic performance at 42 dBA (3 dB below limit)</li>
+                <li>Pressure drop 15% lower than previous generation</li>
+                <li>Passed 1000-hour reliability testing with thermal cycling</li>
+            </ul>
+
+            <div class="image-placeholder">
+                <p>Thermal Testing Results - Temperature vs. Power</p>
+            </div>
+
+            <h2>Results and Impact</h2>
+            <p>The project delivered significant improvements across multiple metrics:</p>
+            <ul>
+                <li><strong>Performance:</strong> 28% reduction in thermal resistance enabled higher processor boost frequencies</li>
+                <li><strong>Cost:</strong> 15% manufacturing cost reduction through design simplification</li>
+                <li><strong>Weight:</strong> 12% lighter, reducing shipping costs and improving server density</li>
+                <li><strong>Reliability:</strong> Enhanced thermal margin improved system longevity</li>
+                <li><strong>Time-to-Market:</strong> Delivered 2 months ahead of schedule</li>
+            </ul>
+
+            <h2>Key Learnings</h2>
+            <p>This project reinforced several important principles:</p>
+            <ul>
+                <li>Early collaboration with manufacturing teams is critical for DFM optimization</li>
+                <li>Parametric CFD analysis can uncover non-intuitive design improvements</li>
+                <li>Material selection requires holistic consideration of thermal, mechanical, and cost factors</li>
+                <li>Acoustic performance must be considered from the start, not as an afterthought</li>
+            </ul>
+
+            <h2>Tools and Technologies</h2>
+            <div class="tools-tags" style="margin-top: 1rem;">
+                <span class="tag">SolidWorks 2022</span>
+                <span class="tag">ANSYS Fluent</span>
+                <span class="tag">ANSYS Mechanical</span>
+                <span class="tag">MATLAB R2021b</span>
+                <span class="tag">Thermal Imaging</span>
+                <span class="tag">Particle Image Velocimetry</span>
+            </div>
+
+            <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+                <a href="index.html#projects" class="btn btn-primary">← Back to All Projects</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 John Smith. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

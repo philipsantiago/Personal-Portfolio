@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerospace Lightweighting Project - John Smith</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .project-detail { padding-top: 100px; min-height: 100vh; }
+        .project-header { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: white; padding: 4rem 0; margin-bottom: 3rem; }
+        .project-header h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .project-meta { display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 1.5rem; }
+        .project-body { max-width: 900px; margin: 0 auto; padding: 0 2rem 4rem; }
+        .project-body h2 { font-size: 2rem; margin: 2.5rem 0 1rem; color: var(--text-primary); }
+        .project-body h3 { font-size: 1.5rem; margin: 2rem 0 1rem; color: var(--text-primary); }
+        .project-body p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem; }
+        .project-body ul { margin-bottom: 1.5rem; padding-left: 1.5rem; }
+        .project-body li { color: var(--text-secondary); line-height: 1.8; margin-bottom: 0.5rem; }
+        .image-placeholder { background: var(--background-alt); border: 2px dashed var(--border-color); border-radius: 12px; height: 400px; display: flex; align-items: center; justify-content: center; margin: 2rem 0; color: var(--text-secondary); }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .stat-card { background: var(--background-alt); padding: 1.5rem; border-radius: 12px; text-align: center; border: 1px solid var(--border-color); }
+        .stat-value { font-size: 2rem; font-weight: 700; color: var(--primary-color); display: block; }
+        .stat-label { color: var(--text-secondary); font-size: 0.875rem; margin-top: 0.5rem; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">JS</div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="project-detail">
+        <div class="project-header">
+            <div class="container">
+                <a href="index.html#projects" style="color: white; opacity: 0.9; text-decoration: none;">← Back to Projects</a>
+                <h1>Aerospace Component Lightweighting Initiative</h1>
+                <p>Advanced topology optimization for aircraft interior components</p>
+                <div class="project-meta">
+                    <div><strong>Duration:</strong> 16 months</div>
+                    <div><strong>Role:</strong> Principal Engineer - Structures</div>
+                    <div><strong>Industry:</strong> Aerospace</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-body">
+            <h2>Project Overview</h2>
+            <p>Led a comprehensive lightweighting initiative for aircraft interior components, targeting minimum 30% weight reduction without compromising safety or increasing production costs. The project encompassed seat frames, overhead bin structures, and galley equipment for a next-generation narrow-body aircraft.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card"><span class="stat-value">42%</span><span class="stat-label">Weight Reduction Achieved</span></div>
+                <div class="stat-card"><span class="stat-value">2.0</span><span class="stat-label">Safety Factor Maintained</span></div>
+                <div class="stat-card"><span class="stat-value">$1.2M</span><span class="stat-label">Lifetime Fuel Savings</span></div>
+                <div class="stat-card"><span class="stat-value">15</span><span class="stat-label">Components Optimized</span></div>
+            </div>
+
+            <h2>Technical Challenge</h2>
+            <p>Aircraft interior components must satisfy stringent requirements:</p>
+            <ul>
+                <li>FAA certification requirements (16g forward, 14g lateral crash loads)</li>
+                <li>Fatigue life exceeding 90,000 flight cycles</li>
+                <li>Flamability and smoke toxicity standards (FAR 25.853)</li>
+                <li>Manufacturing cost targets (no more than 10% increase)</li>
+                <li>Maintainability and inspection requirements</li>
+                <li>Minimum 30% weight reduction vs. current generation</li>
+            </ul>
+
+            <div class="image-placeholder"><p>Seat Frame Assembly - Baseline vs. Optimized</p></div>
+
+            <h2>Design Approach</h2>
+
+            <h3>1. Topology Optimization</h3>
+            <p>Employed advanced topology optimization using Altair OptiStruct:</p>
+            <ul>
+                <li>Defined design space around existing component envelopes</li>
+                <li>Applied multi-load case optimization (crash, vibration, fatigue)</li>
+                <li>Manufacturing constraints (minimum feature size, draw direction)</li>
+                <li>Iterative optimization to refine organic geometries</li>
+            </ul>
+
+            <h3>2. Material Selection Study</h3>
+            <p>Evaluated advanced materials to enable weight reduction:</p>
+            <ul>
+                <li>Aluminum-lithium alloys (2198-T8, 2099-T83)</li>
+                <li>High-strength titanium (Ti-6Al-4V) for critical joints</li>
+                <li>Carbon fiber composites for non-structural panels</li>
+                <li>Magnesium alloys for select secondary structure</li>
+            </ul>
+
+            <div class="image-placeholder"><p>Topology Optimization Results</p></div>
+
+            <h3>3. Design for Additive Manufacturing</h3>
+            <p>Leveraged metal 3D printing for complex geometries:</p>
+            <ul>
+                <li>Selective laser melting (SLM) for titanium components</li>
+                <li>Lattice structures in low-stress regions</li>
+                <li>Integrated features to reduce part count and assembly time</li>
+                <li>Optimized for powder removal and support structure minimization</li>
+            </ul>
+
+            <h2>Structural Analysis</h2>
+            <p>Comprehensive FEA validation ensured safety compliance:</p>
+            <ul>
+                <li>Linear static analysis for ultimate load conditions</li>
+                <li>Nonlinear analysis for crash scenarios (material and geometric nonlinearity)</li>
+                <li>Fatigue analysis using stress-life and strain-life methods</li>
+                <li>Modal analysis to avoid resonance with airframe vibrations</li>
+                <li>Thermal analysis for galley equipment exposure</li>
+            </ul>
+
+            <div class="image-placeholder"><p>FEA Crash Load Simulation Results</p></div>
+
+            <h2>Certification and Testing</h2>
+            <p>Rigorous testing program to meet FAA requirements:</p>
+            <ul>
+                <li><strong>Static Testing:</strong> Ultimate load testing to 1.5x limit load</li>
+                <li><strong>Dynamic Testing:</strong> Sled testing to validate crash performance</li>
+                <li><strong>Fatigue Testing:</strong> 135,000 cycles (1.5x design life)</li>
+                <li><strong>Flammability:</strong> Vertical burn testing per FAR 25.853</li>
+                <li><strong>Corrosion:</strong> Salt spray testing per ASTM B117</li>
+            </ul>
+
+            <h2>Manufacturing Partnership</h2>
+            <p>Collaborated with suppliers to enable production:</p>
+            <ul>
+                <li>Qualified metal AM suppliers for titanium components</li>
+                <li>Developed casting processes for complex aluminum parts</li>
+                <li>Implemented automated fiber placement for composite panels</li>
+                <li>Established quality procedures and inspection criteria</li>
+            </ul>
+
+            <div class="image-placeholder"><p>Manufactured Components - Before and After</p></div>
+
+            <h2>Results and Impact</h2>
+            <ul>
+                <li><strong>Weight Savings:</strong> 42% reduction exceeded 30% target (385 kg total aircraft)</li>
+                <li><strong>Safety:</strong> All components maintained 2.0 safety factor under all load cases</li>
+                <li><strong>Fuel Savings:</strong> $1.2M lifetime fuel cost savings per aircraft</li>
+                <li><strong>Emissions:</strong> 2,400 tons CO₂ reduction over aircraft lifetime</li>
+                <li><strong>Certification:</strong> FAA certification achieved on schedule</li>
+                <li><strong>Cost:</strong> 8% manufacturing cost increase (within 10% target)</li>
+            </ul>
+
+            <h2>Innovation Highlights</h2>
+            <ul>
+                <li>First application of titanium lattice structures in commercial aircraft interiors</li>
+                <li>Novel aluminum-lithium forming processes for complex geometries</li>
+                <li>Integrated multi-material design reducing part count by 25%</li>
+                <li>Automated design optimization workflow reducing development time by 40%</li>
+            </ul>
+
+            <h2>Key Learnings</h2>
+            <ul>
+                <li>Topology optimization must be constrained by manufacturing realities from the start</li>
+                <li>Early supplier engagement is critical for novel manufacturing processes</li>
+                <li>Certification testing should inform design iterations, not just validate final design</li>
+                <li>Multi-material solutions can outperform single-material optimization</li>
+                <li>Additive manufacturing enables geometries impossible with traditional methods</li>
+            </ul>
+
+            <h2>Tools and Technologies</h2>
+            <div class="tools-tags" style="margin-top: 1rem;">
+                <span class="tag">CATIA V5</span>
+                <span class="tag">ANSYS Mechanical</span>
+                <span class="tag">Altair OptiStruct</span>
+                <span class="tag">Abaqus</span>
+                <span class="tag">nTop Platform</span>
+                <span class="tag">MATLAB</span>
+            </div>
+
+            <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+                <a href="index.html#projects" class="btn btn-primary">← Back to All Projects</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 John Smith. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

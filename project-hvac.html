@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVAC Optimization Project - John Smith</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .project-detail { padding-top: 100px; min-height: 100vh; }
+        .project-header { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #0f172a; padding: 4rem 0; margin-bottom: 3rem; }
+        .project-header h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .project-meta { display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 1.5rem; }
+        .project-body { max-width: 900px; margin: 0 auto; padding: 0 2rem 4rem; }
+        .project-body h2 { font-size: 2rem; margin: 2.5rem 0 1rem; color: var(--text-primary); }
+        .project-body h3 { font-size: 1.5rem; margin: 2rem 0 1rem; color: var(--text-primary); }
+        .project-body p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem; }
+        .project-body ul { margin-bottom: 1.5rem; padding-left: 1.5rem; }
+        .project-body li { color: var(--text-secondary); line-height: 1.8; margin-bottom: 0.5rem; }
+        .image-placeholder { background: var(--background-alt); border: 2px dashed var(--border-color); border-radius: 12px; height: 400px; display: flex; align-items: center; justify-content: center; margin: 2rem 0; color: var(--text-secondary); }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .stat-card { background: var(--background-alt); padding: 1.5rem; border-radius: 12px; text-align: center; border: 1px solid var(--border-color); }
+        .stat-value { font-size: 2rem; font-weight: 700; color: var(--primary-color); display: block; }
+        .stat-label { color: var(--text-secondary); font-size: 0.875rem; margin-top: 0.5rem; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">JS</div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="project-detail">
+        <div class="project-header">
+            <div class="container">
+                <a href="index.html#projects" style="color: #0f172a; opacity: 0.7; text-decoration: none;">← Back to Projects</a>
+                <h1>HVAC System Energy Optimization</h1>
+                <p>CFD-driven redesign for commercial building efficiency</p>
+                <div class="project-meta">
+                    <div><strong>Duration:</strong> 12 months</div>
+                    <div><strong>Role:</strong> Lead HVAC Engineer</div>
+                    <div><strong>Industry:</strong> Commercial Real Estate</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-body">
+            <h2>Project Overview</h2>
+            <p>Redesigned the HVAC system for a 150,000 sq ft commercial office building using advanced CFD analysis and energy modeling. The goal was to reduce energy consumption by at least 25% while improving temperature uniformity across all zones and maintaining ASHRAE comfort standards.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card"><span class="stat-value">32%</span><span class="stat-label">Energy Reduction</span></div>
+                <div class="stat-card"><span class="stat-value">$180K</span><span class="stat-label">Annual Cost Savings</span></div>
+                <div class="stat-card"><span class="stat-value">18mo</span><span class="stat-label">Return on Investment</span></div>
+                <div class="stat-card"><span class="stat-value">850</span><span class="stat-label">Tons CO₂ Reduced Annually</span></div>
+            </div>
+
+            <h2>Technical Challenge</h2>
+            <p>The existing HVAC system faced multiple inefficiencies:</p>
+            <ul>
+                <li>Poor temperature uniformity (up to 4°C variation across zones)</li>
+                <li>Oversized equipment leading to short-cycling and inefficiency</li>
+                <li>Insufficient air circulation causing stagnant zones</li>
+                <li>Outdated controls unable to adapt to occupancy patterns</li>
+                <li>High energy consumption (52 kWh/sq ft annually)</li>
+                <li>Limited integration between lighting, occupancy, and HVAC systems</li>
+            </ul>
+
+            <div class="image-placeholder"><p>Existing HVAC Layout - Building Floor Plan</p></div>
+
+            <h2>Analysis Approach</h2>
+
+            <h3>1. CFD Analysis</h3>
+            <p>Conducted comprehensive computational fluid dynamics modeling:</p>
+            <ul>
+                <li>Created detailed 3D model of building interior including furniture and partitions</li>
+                <li>Modeled existing diffuser locations and airflow patterns</li>
+                <li>Identified recirculation zones and dead spots</li>
+                <li>Analyzed temperature stratification and velocity profiles</li>
+                <li>Simulated summer and winter operating conditions</li>
+            </ul>
+
+            <h3>2. Energy Modeling</h3>
+            <p>Built whole-building energy model using EnergyPlus:</p>
+            <ul>
+                <li>Calibrated model against 12 months of utility billing data</li>
+                <li>Analyzed hourly load profiles and equipment operation</li>
+                <li>Identified opportunities for load shifting and demand reduction</li>
+                <li>Evaluated impact of envelope improvements (windows, insulation)</li>
+                <li>Modeled various system configurations and control strategies</li>
+            </ul>
+
+            <div class="image-placeholder"><p>CFD Results - Temperature Distribution and Airflow Patterns</p></div>
+
+            <h2>Design Solutions</h2>
+
+            <h3>1. Air Distribution Redesign</h3>
+            <p>Optimized diffuser placement and sizing based on CFD results:</p>
+            <ul>
+                <li>Relocated 40% of diffusers to improve coverage</li>
+                <li>Specified variable air volume (VAV) boxes for better zone control</li>
+                <li>Added low-velocity displacement ventilation in high-ceiling areas</li>
+                <li>Optimized supply air temperature and flow rates</li>
+            </ul>
+
+            <h3>2. Equipment Right-Sizing</h3>
+            <p>Replaced oversized equipment with properly sized high-efficiency units:</p>
+            <ul>
+                <li>Reduced chiller capacity from 450 tons to 320 tons</li>
+                <li>Installed modular chillers for part-load efficiency</li>
+                <li>Upgraded to variable speed drives on all major fans and pumps</li>
+                <li>Implemented economizer cycle for free cooling</li>
+            </ul>
+
+            <h3>3. Advanced Controls</h3>
+            <p>Implemented smart building management system:</p>
+            <ul>
+                <li>Occupancy sensors integrated with HVAC zoning</li>
+                <li>Demand-controlled ventilation based on CO₂ levels</li>
+                <li>Optimal start/stop algorithms to minimize runtime</li>
+                <li>Real-time optimization based on weather forecasts</li>
+                <li>Integration with lighting and window shade controls</li>
+            </ul>
+
+            <div class="image-placeholder"><p>Optimized HVAC Design - New Layout</p></div>
+
+            <h2>Implementation</h2>
+            <p>Phased implementation to minimize building disruption:</p>
+            <ul>
+                <li><strong>Phase 1:</strong> Controls upgrade and sensor installation (no occupant impact)</li>
+                <li><strong>Phase 2:</strong> Equipment replacement during holiday shutdown</li>
+                <li><strong>Phase 3:</strong> Ductwork modifications completed on weekends</li>
+                <li><strong>Phase 4:</strong> Commissioning and fine-tuning over 3 months</li>
+            </ul>
+
+            <h2>Validation and Commissioning</h2>
+            <p>Comprehensive commissioning ensured design intent:</p>
+            <ul>
+                <li>Airflow measurements at all diffusers verified CFD predictions</li>
+                <li>Temperature uniformity improved to ±1.5°C across all zones</li>
+                <li>Humidity control maintained between 40-60% RH</li>
+                <li>Acoustic measurements confirmed compliance with NC-35 criteria</li>
+                <li>Energy consumption tracked and verified against model predictions</li>
+            </ul>
+
+            <div class="image-placeholder"><p>Before/After Energy Consumption Comparison</p></div>
+
+            <h2>Results and Impact</h2>
+            <ul>
+                <li><strong>Energy Savings:</strong> 32% reduction (from 52 to 35 kWh/sq ft annually)</li>
+                <li><strong>Cost Savings:</strong> $180K annual operating cost reduction</li>
+                <li><strong>Payback:</strong> 18-month ROI on $275K investment</li>
+                <li><strong>Comfort:</strong> Temperature uniformity improved by 60%</li>
+                <li><strong>Environmental:</strong> 850 tons CO₂ emissions reduced annually</li>
+                <li><strong>LEED:</strong> Contributed 12 points toward building's LEED Gold certification</li>
+            </ul>
+
+            <h2>Ongoing Monitoring</h2>
+            <p>Established continuous monitoring and optimization:</p>
+            <ul>
+                <li>Real-time energy dashboard for facility management</li>
+                <li>Automated alerts for equipment faults and inefficiencies</li>
+                <li>Quarterly performance reviews and tuning</li>
+                <li>Predictive maintenance based on equipment runtime and performance</li>
+            </ul>
+
+            <h2>Key Learnings</h2>
+            <ul>
+                <li>CFD analysis reveals inefficiencies not apparent from traditional design methods</li>
+                <li>Equipment right-sizing often more impactful than high-efficiency oversized equipment</li>
+                <li>Advanced controls can deliver 15-20% savings with minimal capital investment</li>
+                <li>Commissioning and continuous monitoring essential to realize predicted savings</li>
+                <li>Integrated approach (envelope, equipment, controls) delivers multiplicative benefits</li>
+            </ul>
+
+            <h2>Tools and Technologies</h2>
+            <div class="tools-tags" style="margin-top: 1rem;">
+                <span class="tag">ANSYS Fluent</span>
+                <span class="tag">EnergyPlus</span>
+                <span class="tag">OpenStudio</span>
+                <span class="tag">AutoCAD MEP</span>
+                <span class="tag">Trane TRACE</span>
+                <span class="tag">Building Management System</span>
+            </div>
+
+            <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+                <a href="index.html#projects" class="btn btn-primary">← Back to All Projects</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 John Smith. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

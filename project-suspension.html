@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suspension System Project - John Smith</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .project-detail {
+            padding-top: 100px;
+            min-height: 100vh;
+        }
+        .project-header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 4rem 0;
+            margin-bottom: 3rem;
+        }
+        .project-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .project-meta {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .project-body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem 4rem;
+        }
+        .project-body h2 {
+            font-size: 2rem;
+            margin: 2.5rem 0 1rem;
+            color: var(--text-primary);
+        }
+        .project-body h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
+        }
+        .project-body p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        .project-body ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .project-body li {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 0.5rem;
+        }
+        .image-placeholder {
+            background: var(--background-alt);
+            border: 2px dashed var(--border-color);
+            border-radius: 12px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem 0;
+            color: var(--text-secondary);
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .stat-card {
+            background: var(--background-alt);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: block;
+        }
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+        }
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">JS</div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="project-detail">
+        <div class="project-header">
+            <div class="container">
+                <a href="index.html#projects" class="back-button" style="color: white; opacity: 0.9;">
+                    ← Back to Projects
+                </a>
+                <h1>Automotive Suspension System Optimization</h1>
+                <p>Enhanced ride comfort and performance for electric vehicle platform</p>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <strong>Duration:</strong> 14 months
+                    </div>
+                    <div class="meta-item">
+                        <strong>Role:</strong> Senior Mechanical Engineer
+                    </div>
+                    <div class="meta-item">
+                        <strong>Industry:</strong> Automotive / EV
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-body">
+            <h2>Project Overview</h2>
+            <p>This project involved a comprehensive redesign of suspension components for an electric vehicle platform. The goal was to improve ride comfort while simultaneously reducing unsprung mass and enhancing handling dynamics—three objectives that are typically in conflict with each other.</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-value">22%</span>
+                    <span class="stat-label">Unsprung Mass Reduction</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">35%</span>
+                    <span class="stat-label">Ride Comfort Improvement</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">500K</span>
+                    <span class="stat-label">Durability Cycles Passed</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">18%</span>
+                    <span class="stat-label">Range Improvement (from weight savings)</span>
+                </div>
+            </div>
+
+            <h2>Technical Challenge</h2>
+            <p>Electric vehicles present unique suspension challenges compared to traditional ICE vehicles:</p>
+            <ul>
+                <li>Higher overall vehicle weight due to battery pack</li>
+                <li>Lower center of gravity requiring optimized roll control</li>
+                <li>Instant torque delivery demanding improved traction management</li>
+                <li>Extended range requirements necessitating aggressive weight reduction</li>
+                <li>Enhanced NVH expectations from EV customers</li>
+            </ul>
+
+            <div class="image-placeholder">
+                <p>Suspension System CAD Assembly</p>
+            </div>
+
+            <h2>Design Approach</h2>
+
+            <h3>1. Multi-Body Dynamics Simulation</h3>
+            <p>Using Adams Car, I developed a comprehensive vehicle dynamics model to evaluate:</p>
+            <ul>
+                <li>Ride comfort metrics (acceleration PSD, ISO 2631 weighted)</li>
+                <li>Handling characteristics (understeer gradient, roll gradient)</li>
+                <li>Wheel travel and kinematic behavior</li>
+                <li>Anti-dive and anti-squat characteristics</li>
+            </ul>
+
+            <h3>2. Topology Optimization</h3>
+            <p>I applied topology optimization techniques to reduce component weight while maintaining structural performance:</p>
+            <ul>
+                <li>Lower control arms redesigned with 35% weight reduction</li>
+                <li>Upper control arms optimized for stiffness-to-weight ratio</li>
+                <li>Knuckles designed with integral brake caliper mounting</li>
+                <li>Novel geometry to accommodate EV powertrain packaging</li>
+            </ul>
+
+            <div class="image-placeholder">
+                <p>FEA Stress Analysis Results</p>
+            </div>
+
+            <h3>3. Material Selection</h3>
+            <p>To achieve weight targets, I evaluated advanced materials:</p>
+            <ul>
+                <li>Aluminum alloy 7075-T6 for control arms (replacing steel)</li>
+                <li>Forged aluminum knuckles for optimal strength-to-weight</li>
+                <li>High-strength steel bushings for durability</li>
+                <li>Composite springs with progressive rate characteristics</li>
+            </ul>
+
+            <h2>Kinematics and Compliance Optimization</h2>
+            <p>I refined suspension geometry to optimize K&C characteristics:</p>
+            <ul>
+                <li>Reduced scrub radius by 8mm for improved steering feel</li>
+                <li>Optimized roll center height for reduced body roll</li>
+                <li>Tuned camber curves for improved tire contact patch</li>
+                <li>Enhanced anti-dive geometry for better brake stability</li>
+            </ul>
+
+            <h2>Testing and Validation</h2>
+            <p>Comprehensive testing program validated the design:</p>
+            <ul>
+                <li><strong>Component Testing:</strong> FEA-predicted stresses verified with strain gauge testing</li>
+                <li><strong>Durability:</strong> Exceeded 500,000 cycle target on proving ground</li>
+                <li><strong>Ride Comfort:</strong> ISO 2631 weighted acceleration reduced by 35%</li>
+                <li><strong>Handling:</strong> Slalom and lane change tests showed 12% improvement</li>
+                <li><strong>NVH:</strong> Road noise reduced by 4 dBA in cabin</li>
+            </ul>
+
+            <div class="image-placeholder">
+                <p>Physical Prototype Testing</p>
+            </div>
+
+            <h2>Results and Impact</h2>
+            <p>The optimized suspension system delivered measurable benefits:</p>
+            <ul>
+                <li><strong>Mass Reduction:</strong> 22% unsprung mass reduction (8.5 kg per corner)</li>
+                <li><strong>Performance:</strong> Enhanced handling without compromising comfort</li>
+                <li><strong>Efficiency:</strong> Mass reduction contributed to 18 miles additional range</li>
+                <li><strong>Durability:</strong> Exceeded all durability targets with margin</li>
+                <li><strong>Cost:</strong> Maintained cost parity with baseline despite aluminum construction</li>
+            </ul>
+
+            <h2>Key Learnings</h2>
+            <ul>
+                <li>Multi-objective optimization requires careful weighting of conflicting requirements</li>
+                <li>Topology optimization can reveal non-intuitive load paths</li>
+                <li>Material selection must consider entire lifecycle (manufacturability, corrosion, repair)</li>
+                <li>EV-specific requirements (instant torque, weight) demand fresh thinking about traditional designs</li>
+            </ul>
+
+            <h2>Tools and Technologies</h2>
+            <div class="tools-tags" style="margin-top: 1rem;">
+                <span class="tag">CATIA V5</span>
+                <span class="tag">ANSYS Mechanical</span>
+                <span class="tag">MSC Adams Car</span>
+                <span class="tag">Altair HyperWorks</span>
+                <span class="tag">MATLAB</span>
+            </div>
+
+            <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+                <a href="index.html#projects" class="btn btn-primary">← Back to All Projects</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 John Smith. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
