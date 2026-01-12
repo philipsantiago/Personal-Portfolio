@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Philip Santiago | Mechanical Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --color-bg: #f8f6f3;
+        --color-bg-alt: #ffffff;
+        --color-text: #1e293b;
+        --color-text-muted: #1e293b; /* Changed to dark blue */
+        --color-accent: #1e3a5f; /* Dark navy blue */
+        --color-accent-light: #1e3a5f; /* Hover state */
+        --color-border: #1e3a5f; /* Light blue-tinted border */
+        --color-border-dark: #1e293b; /* Dark blue for stronger lines */
+        --font-display: "Instrument Serif", Georgia, serif;
+        --font-body: "DM Sans", system-ui, sans-serif;
+        --spacing-xs: 0.5rem;
+        --spacing-sm: 1rem;
+        --spacing-md: 2rem;
+        --spacing-lg: 4rem;
+        --spacing-xl: 6rem;
+        --max-width: 1200px;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: var(--font-body);
+        font-size: 16px;
+        line-height: 1.7;
+        color: var(--color-text);
+        background-color: var(--color-bg);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      .container {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 0 var(--spacing-md);
+      }
+
+      /* Navigation */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background: rgba(248, 246, 243, 0.95);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .navbar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 72px;
+      }
+
+      .nav-brand {
+        font-family: var(--font-display);
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: var(--color-text);
+        text-decoration: none;
+        letter-spacing: -0.02em;
+      }
+
+      .nav-menu {
+        display: flex;
+        list-style: none;
+        gap: var(--spacing-lg);
+      }
+
+      .nav-menu a {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--color-text-muted);
+        text-decoration: none;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        transition: color 0.2s ease;
+      }
+
+      .nav-menu a:hover {
+        color: var(--color-text);
+      }
+
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        padding: 10px;
+      }
+
+      .hamburger span {
+        width: 24px;
+        height: 2px;
+        background: var(--color-text);
+        transition: all 0.3s ease;
+      }
+
+      /* Hero Section */
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        padding-top: 72px;
+        background: var(--color-bg);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(
+          135deg,
+          transparent 0%,
+          rgba(45, 74, 62, 0.03) 100%
+        );
+        pointer-events: none;
+      }
+
+      .hero-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-xl);
+        align-items: center;
+        padding: var(--spacing-xl) 0;
+      }
+
+      .hero-eyebrow {
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--color-accent);
+        margin-bottom: var(--spacing-sm);
+      }
+
+      .hero-title {
+        font-family: var(--font-display);
+        font-size: clamp(3rem, 6vw, 4.5rem);
+        font-weight: 400;
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+        color: var(--color-text);
+        margin-bottom: var(--spacing-sm);
+      }
+
+      .hero-subtitle {
+        font-family: var(--font-display);
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        font-weight: 400;
+        font-style: italic;
+        color: var(--color-text-muted);
+        margin-bottom: var(--spacing-md);
+      }
+
+      .hero-description {
+        font-size: 1.125rem;
+        color: var(--color-text-muted);
+        max-width: 480px;
+        margin-bottom: var(--spacing-lg);
+      }
+
+      .hero-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .headshot-container {
+        width: 380px;
+        height: 380px;
+        position: relative;
+        overflow: hidden;
+        background: none;
+      }
+
+      .headshot-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .headshot-container::before {
+        content: "";
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        right: -16px;
+        bottom: -16px;
+        border: 1px solid var(--color-border-dark);
+        z-index: -1;
+      }
+
+      .headshot-placeholder {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(180deg, #e8e5e0 0%, #d8d5d0 100%);
+      }
+
+      .headshot-placeholder svg {
+        width: 120px;
+        height: 120px;
+        opacity: 0.4;
+      }
+
+      /* Buttons */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem 2rem;
+        font-family: var(--font-body);
+        font-size: 0.875rem;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .btn-primary {
+        background: var(--color-accent);
+        color: white;
+      }
+
+      .btn-primary:hover {
+        background: var(--color-accent-light);
+      }
+
+      .btn-secondary {
+        background: transparent;
+        color: var(--color-text);
+        border: 1px solid var(--color-border-dark);
+      }
+
+      .btn-secondary:hover {
+        background: var(--color-text);
+        color: var(--color-bg);
+        border-color: var(--color-text);
+      }
+
+      /* Section Styles */
+      .section {
+        padding: var(--spacing-xl) 0;
+      }
+
+      .section-header {
+        margin-bottom: var(--spacing-lg);
+      }
+
+      .section-eyebrow {
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--color-accent);
+        margin-bottom: var(--spacing-xs);
+      }
+
+      .section-title {
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: 400;
+        letter-spacing: -0.02em;
+        color: var(--color-text);
+      }
+
+      /* About Section */
+      .about {
+        background: var(--color-bg-alt);
+        border-top: 1px solid var(--color-border);
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .about-content {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: var(--spacing-xl);
+      }
+
+      .about-text h3 {
+        font-family: var(--font-display);
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: var(--color-text);
+        margin-bottom: var(--spacing-sm);
+        margin-top: var(--spacing-md);
+      }
+
+      .about-text h3:first-child {
+        margin-top: 0;
+      }
+
+      .about-text p {
+        color: var(--color-text-muted);
+        margin-bottom: var(--spacing-sm);
+      }
+
+      .skills-section {
+        padding-top: var(--spacing-sm);
+      }
+
+      .skills-category {
+        margin-bottom: var(--spacing-md);
+      }
+
+      .skills-category h3 {
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--color-text);
+        margin-bottom: var(--spacing-sm);
+        padding-bottom: var(--spacing-xs);
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .skills-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .skill-tag {
+        padding: 0.5rem 1rem;
+        background: var(--color-bg);
+        border: 1px solid var(--color-border);
+        font-size: 0.875rem;
+        color: var(--color-text-muted);
+        transition: all 0.2s ease;
+      }
+
+      .skill-tag:hover {
+        border-color: var(--color-accent);
+        color: var(--color-accent);
+      }
+
+      /* Projects Section */
+      .projects {
+        background: var(--color-bg);
+      }
+
+      .projects-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: var(--spacing-lg);
+        padding-bottom: var(--spacing-md);
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-imageme102 img {
+    margin-top: 40px;
+    margin-left: 40px;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.project-imagetele img {
+    margin-top: 40px;
+    margin-left: 80px;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project-imagesimr img {
+    margin-top: 40px;
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+      .scroll-indicator {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.875rem;
+        color: var(--color-text-muted);
+      }
+
+      .scroll-indicator svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      .projects-grid {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xl);
+      }
+
+      .project-card {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        gap: var(--spacing-md);
+        padding-bottom: var(--spacing-xl);
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .project-card:last-child {
+        border-bottom: none;
+        padding-bottom: -10;
+      }
+
+      .project-number {
+        font-family: var(--font-display);
+        font-size: 3rem;
+        font-style: italic;
+        color: var(--color-border-dark);
+        line-height: 1;
+      }
+
+      .project-card-inner {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: var(--spacing-lg);
+        align-items: start;
+      }
+
+      .project-card:nth-child(even) .project-card-inner {
+        direction: rtl;
+      }
+
+      .project-card:nth-child(even) .project-card-inner > * {
+        direction: ltr;
+      }
+
+      .project-image {
+        width: 100%;
+  height: 95%;
+  margin-top: 20px;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+
+      .project-image1 {
+        width: 100%;
+  height: 80%;
+  margin-top: 20px;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+
+
+      
+
+      .image-placeholder {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #e8e5e0 0%, #d8d5d0 100%);
+      }
+
+      .image-placeholder svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      .project-content h3 {
+        font-family: var(--font-display);
+        font-size: 1.75rem;
+        font-weight: 400;
+        letter-spacing: -0.01em;
+        color: var(--color-text);
+        margin-bottom: var(--spacing-sm);
+      }
+
+      .project-content > p {
+        color: var(--color-text-muted);
+        margin-bottom: var(--spacing-md);
+      }
+
+      .project-details {
+        margin-bottom: var(--spacing-md);
+      }
+
+      .detail-item {
+        font-size: 0.875rem;
+        color: var(--color-text-muted);
+        padding: 0.75rem 0;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .detail-item:first-child {
+        border-top: 1px solid var(--color-border);
+      }
+
+      .detail-item strong {
+        font-weight: 900;
+        color: var(--color-text);
+      }
+
+      /* Contact Section */
+      .contact {
+        background: var(--color-bg-alt);
+        border-top: 1px solid var(--color-border);
+      }
+
+      .contact-content {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: var(--spacing-xl);
+      }
+
+      .contact-info p {
+        color: var(--color-text-muted);
+        margin-bottom: var(--spacing-md);
+        max-width: 360px;
+      }
+
+      .contact-links {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+      }
+
+      .contact-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-size: 0.9375rem;
+        color: var(--color-text);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .contact-link:hover {
+        color: var(--color-accent);
+      }
+
+      .contact-link svg {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+      }
+
+      .contact-form {
+        display: grid;
+        gap: var(--spacing-md);
+      }
+
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-md);
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .form-group label {
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--color-text);
+      }
+
+      .form-group input,
+      .form-group textarea {
+        padding: 1rem;
+        font-family: var(--font-body);
+        font-size: 1rem;
+        color: var(--color-text);
+        background: var(--color-bg);
+        border: 1px solid var(--color-border);
+        outline: none;
+        transition: border-color 0.2s ease;
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        border-color: var(--color-accent);
+      }
+
+      .form-group textarea {
+        resize: vertical;
+        min-height: 150px;
+      }
+
+      /* Footer */
+      .footer {
+        padding: var(--spacing-md) 0;
+        background: var(--color-text);
+        color: var(--color-bg);
+      }
+
+      .footer .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .footer-brand {
+        font-family: var(--font-display);
+        font-size: 1.25rem;
+      }
+
+      .footer-text {
+        font-size: 0.875rem;
+        color: rgba(248, 246, 243, 0.6);
+      }
+      .headshot-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        object-position: center top;
+      }
+
+      /* Animations */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .hero-content {
+        animation: fadeInUp 0.8s ease-out;
+      }
+
+      /* Responsive */
+      @media (max-width: 968px) {
+        .hero-content {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+
+        .hero-description {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .hero-image {
+          order: -1;
+        }
+
+        .headshot-container {
+          width: 280px;
+          height: 360px;
+        }
+
+        .about-content {
+          grid-template-columns: 1fr;
+        }
+
+        .project-card {
+          grid-template-columns: 1fr;
+        }
+
+        .project-number {
+          font-size: 2rem;
+        }
+
+        .project-card-inner {
+          grid-template-columns: 1fr;
+        }
+
+        .project-card:nth-child(even) .project-card-inner {
+          direction: ltr;
+        }
+
+        .contact-content {
+          grid-template-columns: 1fr;
+        }
+
+        .form-row {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .nav-menu {
+          display: none;
+          position: absolute;
+          top: 72px;
+          left: 0;
+          right: 0;
+          background: var(--color-bg);
+          flex-direction: column;
+          padding: var(--spacing-md);
+          gap: var(--spacing-md);
+          border-bottom: 1px solid var(--color-border);
+        }
+
+        .nav-menu.active {
+          display: flex;
+        }
+
+        .hamburger {
+          display: flex;
+        }
+
+        .hamburger.active span:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+          opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+          transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        .projects-header {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: var(--spacing-sm);
+        }
+
+        .footer .container {
+          flex-direction: column;
+          gap: var(--spacing-sm);
+          text-align: center;
+        }
+        
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#home" class="nav-brand">Philip Santiago</a>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="hero-eyebrow">Mechanical Engineer</p>
+            <h1 class="hero-title">Philip Santiago</h1>
+            <p class="hero-eyebrow">philipds@stanford.edu</p>
+          </div>
+
+          <div class="hero-image">
+            <div class="headshot-container">
+              <img
+                src="images/headshot.jpg"
+                alt="Headshot of Philip Santiago"
+                class="headshot-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Background</p>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Experience</h3>
+            <p>
+              Hello! My name is Philip and I'm majoring in mechanical
+              engineering and minoring in computer science I specialize in
+              developing innovative solutions for complex engineering
+              challenges.
+            </p>
+            <p>
+              My expertise spans from initial concept development through
+              detailed design, analysis, prototyping, and manufacturing.
+            </p>
+          </div>
+          <div class="skills-section">
+            <div class="skills-category">
+              <h3>3D CAD Software</h3>
+              <div class="skills-grid">
+                <span class="skill-tag">Siemens NX</span>
+                <span class="skill-tag">SolidWorks</span>
+                <span class="skill-tag">Fusion 360</span>
+                <span class="skill-tag">OnShape</span>
+                <span class="skill-tag">FEA & Structural Analysis</span>
+              </div>
+            </div>
+            <div class="skills-category">
+              <h3>Software</h3>
+              <div class="skills-grid">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React Native</span>
+                <span class="skill-tag">Matlab</span>
+                <span class="skill-tag">HTML/CSS</span>
+                <span class="skill-tag">Firebase</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <div class="projects-header">
+          <div class="section-header" style="margin-bottom: 0">
+            <p class="section-eyebrow">Portfolio</p>
+            <h2 class="section-title">Projects</h2>
+          </div>
+          <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-number">01</div>
+            <div class="project-card-inner">
+              <div class="project-image">
+                <div class="project-image1">
+                    <img src="images/actuatortest.png" alt="Project description">
+                  </div>
+              </div>
+              <div class="project-content">
+                <h3>Actuator Test Fixture | Skydweller Aero</h3>
+                <p>
+                  Designed and fabricated 3D-printed test fixture in Siemens NX
+                  with FEA validation to evaluate actuator assemblies under load
+                  conditions, enabling performance testing for future aircraft
+                  actuator systems.
+                </p>
+                <div class="project-details">
+                  <div class="detail-item">
+                    <strong>Challenge:</strong> Custom actuator assemblies lacked compatible testing infrastructure for load validation
+
+                  </div>
+                  <div class="detail-item">
+                    <strong>Tools:</strong>  Siemens NX, FEA & Structural Analysis
+                  </div>
+                  <div class="detail-item">
+                    <strong>Outcome:</strong> Enabled validation of actuator performance under flight load conditions
+
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-number">02</div>
+            <div class="project-card-inner">
+                <div class="project-image">
+                  <div class="project-image">
+                      <img src="images/Slac2.png" alt="Project description">
+                    </div>
+                
+                </div>
+              <div class="project-content">
+                <h3>Sample Delivery | SLAC National Accelerator Laboratory</h3>
+                <p>
+                    Designed and validated 4 sample transport systems through iterative prototyping and data-driven optimization.
+
+                </p>
+                <div class="project-details">
+                  <div class="detail-item">
+                    <strong>Challenge:</strong> Identify optimal materials, container dimensions, and shipping methods to protect samples from temperature fluctuations, pressure changes, and spills during transit.
+                  </div>
+                  <div class="detail-item">
+                    <strong>Tools:</strong> OnShape, systematic experimentation
+                  </div>
+                  <div class="detail-item">
+                    <strong>Outcome:</strong> Achieved 40% improvement in thermal resistance and 20% increase in syringe and vial capacity per container.
+
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-number">03</div>
+            <div class="project-card-inner">
+              
+                <div class="project-image">
+                    <img src="images/flight.png" alt="Project description">
+                  </div>
+              
+              <div class="project-content">
+                <h3>Flight Club</h3>
+                <p>
+                    Designed and validated composite wing spar and rib structures using FEA, optimizing for weight reduction while meeting load requirements. Fabricated and integrated aileron control systems with servo actuation.
+                </p>
+                <div class="project-details">
+                  <div class="detail-item">
+                    <strong>Challenge:</strong> Reduce weight and mechanical complexity of the servo-to-aileron linkage.
+                  </div>
+                  <div class="detail-item">
+                    <strong>Tools:</strong> OnShape, FEA
+
+                  </div>
+                  <div class="detail-item">
+                    <strong>Outcome:</strong> Achieved 30% lighter aileron system, lowering power consumption and improving flight efficiency.
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card">
+            <div class="project-number">04</div>
+            <div class="project-card-inner">
+              <div class="project-imageme102">
+                <img src="images/me102.png" alt="Project description">
+              </div>
+              <div class="project-content">
+                <h3>ME 102 Foundations of Product Realization</h3>
+                <p>
+                    The escapement converts the downward linear motion of the brass weight into rotational motion, which drives the film and opens and closes a trap door. Film rotation direction speed can be adjusted using the touchpoint on the right via the bevel gears.
+                </p>
+                <div class="project-details">
+                  
+                  <div class="detail-item">
+                    <strong>Tools:</strong> Fusion 360, FEA & Structural Analysis
+                  </div>
+                  
+                </div>
+                <a href="https://youtu.be/OJxnJiZsK4U" class="btn btn-secondary"
+                  >View Video</a
+                >
+              </div>
+            </div>
+          </div>
+
+
+    <section id="projects" class="projects section">
+        <div class="container">
+          <div class="projects-header">
+            <div class="section-header" style="margin-bottom: 0">
+              <h2 class="section-title">Software Projects</h2>
+            </div>
+            <div class="scroll-indicator">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+              </svg>
+            </div>
+          </div>
+
+        </div>
+  
+        <div class="projects-grid">
+          <!-- Project 5 -->
+          <div class="project-card">
+            <div class="project-number">05</div>
+            <div class="project-card-inner">
+              <div class="project-imagetele">
+                <img src="images/telepathy.jpg" alt="Project description">
+              </div>
+              <div class="project-content">
+                <h3>Mobile Application Development</h3>
+                <p>
+                    Built a cross-platform React Native mobile app with AWS and Google Firebase backend and OpenAI API to support real-time user interaction and AI-driven user experiences. 
+
+                </p>
+                <div class="project-details">
+                  
+                  <div class="detail-item">
+                    <strong>Tools:</strong> React Native, Amazon Web Services, Google Firebase, OpenAI API
+                  </div>
+                  
+                </div>
+                <a href="https://youtu.be/OJxnJiZsK4U" class="btn btn-secondary"
+                  >View Video</a
+                >
+              </div>
+            </div>
+          </div>
+
+          
+
+          
+
+
+
+          <!-- Project 6 -->
+          <div class="project-card">
+            <div class="project-number">06</div>
+            <div class="project-card-inner">
+              <div class="project-image">
+                <img src="images/searchabledatabase.png" alt="Project description">
+              </div>
+              <div class="project-content">
+                <h3>Searchable Database | Skydweller Aero</h3>
+                <p>
+                    Implemented searchable database to streamline identification of 10,000+ mechanical parts, reducing part identification time from minutes to seconds.
+
+
+                </p>
+                <div class="project-details">
+                  
+                  <div class="detail-item">
+                    <strong>Tools:</strong> JavaScript, HTML, CSS
+                  </div>
+                  
+                </div>
+                <a href="https://philipsantiago.github.io/SkydwellerSearchableDatabase/" class="btn btn-secondary"
+                  >View Tool</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <section id="projects" class="projects section">
+            <div class="container">
+              <div class="projects-header">
+                <div class="section-header" style="margin-bottom: 0">
+                  <h2 class="section-title">Research Projects</h2>
+                </div>
+                <div class="scroll-indicator">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Project 7 -->
+              <div class="projects-grid">
+                <!-- Project 7 -->
+                <div class="project-card">
+                  <div class="project-number">07</div>
+                  <div class="project-card-inner">
+                    <div class="project-imagesimr">
+                      <img src="images/SIMR.jpg" alt="Project description">
+                    </div>
+                    <div class="project-content">
+                      <h3>Stanford Institutes of Medicine Summer Research Program</h3>
+                      <p>
+                        Plotted/analyzed sensor data using PRISM software, designed and executed data analysis for clinical trials, recruited 40 participants, identified patterns in data to improve sensors, presented to Stanford faculty.
+                      </p>
+                      <div class="project-details">
+                        <div class="detail-item">
+                          <strong>Tools:</strong> PRISM
+                        </div>
+                      </div>
+                      <a href="https://www.linkedin.com/in/philip-santiago-b44367237/details/experience/1635507679091/single-media-viewer/?profileId=ACoAADr2r6QBkrgH0hl7BBbPEDh6UgZD4D1GRaE" class="btn btn-secondary">View Poster</a>
+                    </div>
+                  </div>
+                </div>
+
+          
+
+
+           <!-- Project 8 -->
+           <div class="project-card">
+            <div class="project-number">08</div>
+            <div class="project-card-inner">
+              <div class="project-image">
+                <iframe 
+                  src="images/markov.pdf" 
+                  width="100%" 
+                  height="500px" 
+                  style="border: 1px solid var(--color-border); border-radius: 10px;">
+                </iframe>
+              </div>
+              <div class="project-content">
+                <h3>Energy Management System | CS238</h3>
+                <p>
+                  Developed Markov process-based energy management system using sensor data (battery level, solar irradiance, weather) to optimize altitude decision making to extend flight time by maximizing solar energy capture.
+                </p>
+                <div class="project-details">
+                  <div class="detail-item">
+                    <strong>Tools:</strong> Python
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+
+             
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-brand">Philip Santiago</div>
+        <p class="footer-text">© 2025 All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile navigation toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+
+      // Close menu on link click
+      document.querySelectorAll(".nav-menu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navMenu.classList.remove("active");
+        });
+      });
+
+      // Form submission
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Thank you for your message! I will get back to you soon.");
+          this.reset();
+        });
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

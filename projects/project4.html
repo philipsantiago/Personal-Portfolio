@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Vibration Analysis & Dampening System | Philip Santiago</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">PS</div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Detail -->
+    <section class="project-detail">
+        <div class="container">
+            <a href="../index.html#projects" class="back-link">&larr; Back to Projects</a>
+
+            <h1 class="project-title">Dynamic Vibration Analysis & Dampening System</h1>
+
+            <div class="project-meta">
+                <span class="meta-item"><strong>Industry:</strong> Industrial Machinery</span>
+                <span class="meta-item"><strong>Duration:</strong> 4 months</span>
+                <span class="meta-item"><strong>Role:</strong> Vibration Analysis Engineer</span>
+            </div>
+
+            <div class="project-image-large">
+                <div class="image-placeholder">
+                    <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="800" height="500" fill="#e2e8f0"/>
+                        <path d="M 200 400 Q 300 200 400 400 T 600 400" stroke="#4a5568" stroke-width="4" fill="none"/>
+                        <circle cx="400" cy="300" r="50" fill="#4a5568"/>
+                        <text x="400" y="460" font-size="24" fill="#2d3748" text-anchor="middle">Vibration Dampening System</text>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="project-content-detail">
+                <h2>Project Overview</h2>
+                <p>
+                    A critical piece of industrial processing equipment was experiencing severe vibration
+                    issues leading to premature bearing failures, structural fatigue, and unplanned
+                    downtime. This project involved comprehensive modal analysis, root cause identification,
+                    and design of a custom vibration dampening solution.
+                </p>
+
+                <h2>Technical Challenge</h2>
+                <p>
+                    The equipment was operating at speeds that excited multiple resonance frequencies:
+                </p>
+                <ul>
+                    <li>Excessive vibration amplitudes (>50mm/s RMS) at operating speeds</li>
+                    <li>Multiple resonance frequencies within the operating range (1200-1800 RPM)</li>
+                    <li>Bearing failures occurring every 3-4 months instead of expected 2-year life</li>
+                    <li>Structural cracks developing in mounting brackets and support frames</li>
+                    <li>Equipment shutdowns causing significant production losses</li>
+                    <li>Space and weight constraints limiting dampening solutions</li>
+                </ul>
+
+                <h2>Approach & Methodology</h2>
+
+                <h3>1. Diagnostic Phase</h3>
+                <ul>
+                    <li>Installed tri-axial accelerometers at critical measurement points</li>
+                    <li>Conducted experimental modal analysis (EMA) using impact hammer testing</li>
+                    <li>Performed operating deflection shape (ODS) analysis during normal operation</li>
+                    <li>Collected time-domain and frequency-domain vibration data using LabVIEW</li>
+                    <li>Identified natural frequencies, mode shapes, and damping ratios</li>
+                </ul>
+
+                <h3>2. Computational Modal Analysis</h3>
+                <ul>
+                    <li>Created detailed finite element model in ANSYS including all structural components</li>
+                    <li>Performed modal analysis to predict natural frequencies and mode shapes</li>
+                    <li>Validated FE model by correlating with experimental results (MAC > 0.95)</li>
+                    <li>Conducted harmonic response analysis to predict forced vibration behavior</li>
+                    <li>Evaluated multiple design modifications using parametric studies</li>
+                </ul>
+
+                <h3>3. Solution Design</h3>
+                <ul>
+                    <li>Designed tuned mass damper system targeting primary resonance frequency</li>
+                    <li>Specified viscoelastic isolators for base mounting with optimized stiffness/damping</li>
+                    <li>Reinforced structural members to shift natural frequencies away from operating range</li>
+                    <li>Created detailed engineering drawings and installation procedures</li>
+                </ul>
+
+                <h3>4. Implementation & Validation</h3>
+                <ul>
+                    <li>Fabricated and installed dampening components during scheduled maintenance</li>
+                    <li>Conducted post-modification vibration testing and analysis</li>
+                    <li>Monitored long-term vibration levels and bearing condition</li>
+                    <li>Documented baseline improvement for future reference</li>
+                </ul>
+
+                <h2>Tools & Software</h2>
+                <div class="tools-used">
+                    <span class="tool-tag">ANSYS Modal</span>
+                    <span class="tool-tag">ANSYS Harmonic Response</span>
+                    <span class="tool-tag">MATLAB Signal Processing</span>
+                    <span class="tool-tag">LabVIEW</span>
+                    <span class="tool-tag">ME'scope VES</span>
+                    <span class="tool-tag">SolidWorks</span>
+                </div>
+
+                <h2>Results & Impact</h2>
+                <div class="results-grid">
+                    <div class="result-card">
+                        <div class="result-number">85%</div>
+                        <div class="result-label">Vibration Reduction</div>
+                        <p>From 52 mm/s to 8 mm/s RMS at critical locations</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">Zero</div>
+                        <div class="result-label">Bearing Failures</div>
+                        <p>No failures in 24 months post-modification</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">$450K</div>
+                        <div class="result-label">Annual Savings</div>
+                        <p>Reduced downtime and maintenance costs</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">99.2%</div>
+                        <div class="result-label">Uptime Achieved</div>
+                        <p>Improved from 92% to industry-leading reliability</p>
+                    </div>
+                </div>
+
+                <h2>Technical Details</h2>
+                <p>
+                    <strong>Primary Resonance Identified:</strong> The first bending mode of the main shaft
+                    assembly occurred at 1,450 RPM, directly within the operating speed range. This mode
+                    exhibited a damping ratio of only 0.8%, making it highly susceptible to resonance.
+                </p>
+                <p>
+                    <strong>Dampening Solution:</strong> A tuned mass damper was designed with a natural
+                    frequency of 1,440 RPM and optimized damping ratio of 12%. This absorber effectively
+                    "pulled" vibration energy from the main structure, reducing response amplitudes by 85%.
+                </p>
+                <p>
+                    <strong>Isolation System:</strong> Replacing rigid mounts with properly sized viscoelastic
+                    isolators provided additional damping and prevented vibration transmission to the
+                    foundation, addressing secondary issues with floor vibration.
+                </p>
+
+                <h2>Key Learnings</h2>
+                <p>
+                    This project demonstrated the critical importance of experimental validation in
+                    vibration analysis. While FEA provided valuable insights, the experimental modal
+                    analysis revealed complexities in the actual system behavior that weren't captured
+                    in the initial models, including significant contribution from piping and auxiliary
+                    equipment.
+                </p>
+                <p>
+                    The combination of multiple mitigation strategies proved more effective than any
+                    single approach. The tuned mass damper addressed the primary resonance, while
+                    structural reinforcement and isolation tackled secondary issues. This holistic
+                    approach is now our standard methodology for vibration problems.
+                </p>
+            </div>
+
+            <div class="project-navigation">
+                <a href="project3.html" class="nav-btn">&larr; Previous Project</a>
+                <a href="../index.html#projects" class="nav-btn">All Projects</a>
+                <a href="project5.html" class="nav-btn">Next Project &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Philip Santiago. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

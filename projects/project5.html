@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Material Handling System | Philip Santiago</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">PS</div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Detail -->
+    <section class="project-detail">
+        <div class="container">
+            <a href="../index.html#projects" class="back-link">&larr; Back to Projects</a>
+
+            <h1 class="project-title">Automated Material Handling System</h1>
+
+            <div class="project-meta">
+                <span class="meta-item"><strong>Industry:</strong> Warehouse & Logistics</span>
+                <span class="meta-item"><strong>Duration:</strong> 10 months</span>
+                <span class="meta-item"><strong>Role:</strong> Automation Systems Engineer</span>
+            </div>
+
+            <div class="project-image-large">
+                <div class="image-placeholder">
+                    <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="800" height="500" fill="#e2e8f0"/>
+                        <polygon points="400,120 520,300 280,300" fill="#4a5568" stroke="#2d3748" stroke-width="3"/>
+                        <rect x="320" y="320" width="160" height="80" fill="#4a5568" stroke="#2d3748" stroke-width="3"/>
+                        <text x="400" y="460" font-size="24" fill="#2d3748" text-anchor="middle">Automated Material Handling</text>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="project-content-detail">
+                <h2>Project Overview</h2>
+                <p>
+                    Designed and implemented a comprehensive automated material handling system for a
+                    high-volume distribution center. The system integrated robotic picking, autonomous
+                    guided vehicles (AGVs), and intelligent conveyor networks to optimize material flow
+                    and dramatically improve operational efficiency.
+                </p>
+
+                <h2>Technical Challenge</h2>
+                <p>
+                    The existing manual system was reaching capacity limits and faced multiple challenges:
+                </p>
+                <ul>
+                    <li>Limited throughput capacity (500 units/hour vs. required 1,500 units/hour)</li>
+                    <li>High labor costs and difficulty finding qualified workers</li>
+                    <li>Safety incidents from manual material handling operations</li>
+                    <li>Space constraints in existing facility (no expansion possible)</li>
+                    <li>Need for 24/7 operation with minimal downtime</li>
+                    <li>Integration with legacy warehouse management system (WMS)</li>
+                    <li>Handling diverse product sizes, weights, and fragility levels</li>
+                </ul>
+
+                <h2>Approach & Methodology</h2>
+
+                <h3>1. System Requirements & Analysis</h3>
+                <ul>
+                    <li>Conducted detailed workflow analysis and time-motion studies</li>
+                    <li>Mapped current material flow patterns and identified bottlenecks</li>
+                    <li>Analyzed product mix and handling requirements for all SKUs</li>
+                    <li>Developed system capacity requirements based on business projections</li>
+                    <li>Created simulation models to evaluate different automation approaches</li>
+                </ul>
+
+                <h3>2. Mechanical System Design</h3>
+                <ul>
+                    <li>Designed custom robotic end effectors for varied product handling</li>
+                    <li>Specified and integrated 6-axis industrial robots (FANUC and ABB)</li>
+                    <li>Designed modular conveyor system with zone control and accumulation</li>
+                    <li>Created 3D facility layout in SolidWorks with full interference checking</li>
+                    <li>Designed safety guarding and e-stop systems per OSHA and ANSI standards</li>
+                    <li>Developed preventive maintenance procedures and schedules</li>
+                </ul>
+
+                <h3>3. Controls & Integration</h3>
+                <ul>
+                    <li>Programmed PLCs (Allen-Bradley ControlLogix) for system coordination</li>
+                    <li>Developed Python-based control algorithms for route optimization</li>
+                    <li>Integrated with existing WMS via RESTful API</li>
+                    <li>Implemented real-time monitoring dashboard using SCADA system</li>
+                    <li>Created failsafe logic for graceful degradation during component failures</li>
+                </ul>
+
+                <h3>4. Implementation & Commissioning</h3>
+                <ul>
+                    <li>Phased implementation to maintain operations during installation</li>
+                    <li>Conducted Factory Acceptance Testing (FAT) and Site Acceptance Testing (SAT)</li>
+                    <li>Trained operations and maintenance personnel</li>
+                    <li>Performed system optimization and throughput validation</li>
+                    <li>Established KPI tracking for ongoing performance monitoring</li>
+                </ul>
+
+                <h2>Tools & Software</h2>
+                <div class="tools-used">
+                    <span class="tool-tag">SolidWorks</span>
+                    <span class="tool-tag">AutoCAD</span>
+                    <span class="tool-tag">Python</span>
+                    <span class="tool-tag">Allen-Bradley Studio 5000</span>
+                    <span class="tool-tag">RobotStudio (ABB)</span>
+                    <span class="tool-tag">Roboguide (FANUC)</span>
+                    <span class="tool-tag">FlexSim (Simulation)</span>
+                </div>
+
+                <h2>Results & Impact</h2>
+                <div class="results-grid">
+                    <div class="result-card">
+                        <div class="result-number">3x</div>
+                        <div class="result-label">Throughput Increase</div>
+                        <p>From 500 to 1,600 units/hour sustained rate</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">60%</div>
+                        <div class="result-label">Labor Cost Reduction</div>
+                        <p>$850K annual savings in direct labor</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">92%</div>
+                        <div class="result-label">Reduction in Incidents</div>
+                        <p>Near elimination of material handling injuries</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">99.3%</div>
+                        <div class="result-label">System Uptime</div>
+                        <p>Exceeding target of 98% availability</p>
+                    </div>
+                </div>
+
+                <h2>Technical Highlights</h2>
+                <p>
+                    <strong>Adaptive Gripper Design:</strong> Developed a custom pneumatic gripper with
+                    force feedback and adaptive fingers capable of handling products ranging from 2 lbs
+                    to 50 lbs without requiring tool changes. This eliminated a major bottleneck and
+                    improved system flexibility.
+                </p>
+                <p>
+                    <strong>Intelligent Routing Algorithm:</strong> Implemented a Python-based algorithm
+                    that dynamically optimizes material routing based on real-time system status,
+                    prioritizing urgent orders while maintaining overall throughput. The algorithm
+                    reduced average order cycle time by 40%.
+                </p>
+                <p>
+                    <strong>Predictive Maintenance:</strong> Integrated sensors and analytics to monitor
+                    critical component health (motor currents, vibration, temperature). The system
+                    predicts maintenance needs before failures occur, contributing to exceptional uptime.
+                </p>
+
+                <h2>Key Learnings</h2>
+                <p>
+                    This project reinforced that successful automation requires more than just buying
+                    robots and installing them. The integration between mechanical systems, controls,
+                    and enterprise software was where the real complexity—and value—emerged.
+                </p>
+                <p>
+                    Phased implementation was crucial. Rather than a "big bang" approach, we brought up
+                    the system in stages, allowing operations to continue and giving us opportunities to
+                    learn and refine before full deployment. This reduced risk and gained buy-in from
+                    the operations team.
+                </p>
+                <p>
+                    Human factors were more important than initially anticipated. The system's success
+                    depended on operators trusting and understanding it. Investing in comprehensive
+                    training and making the system transparent (clear status indicators, intuitive
+                    interfaces) was essential for long-term success.
+                </p>
+            </div>
+
+            <div class="project-navigation">
+                <a href="project4.html" class="nav-btn">&larr; Previous Project</a>
+                <a href="../index.html#projects" class="nav-btn">All Projects</a>
+                <a href="project6.html" class="nav-btn">Next Project &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Philip Santiago. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

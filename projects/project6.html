@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermal Management for Electronics Enclosure | Philip Santiago</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">PS</div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Detail -->
+    <section class="project-detail">
+        <div class="container">
+            <a href="../index.html#projects" class="back-link">&larr; Back to Projects</a>
+
+            <h1 class="project-title">Thermal Management for Electronics Enclosure</h1>
+
+            <div class="project-meta">
+                <span class="meta-item"><strong>Industry:</strong> Defense & Electronics</span>
+                <span class="meta-item"><strong>Duration:</strong> 7 months</span>
+                <span class="meta-item"><strong>Role:</strong> Thermal Systems Engineer</span>
+            </div>
+
+            <div class="project-image-large">
+                <div class="image-placeholder">
+                    <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="800" height="500" fill="#e2e8f0"/>
+                        <rect x="250" y="150" width="300" height="200" rx="15" fill="#4a5568" stroke="#2d3748" stroke-width="3"/>
+                        <circle cx="400" cy="250" r="40" fill="#718096"/>
+                        <path d="M 380 230 L 420 230 L 420 270 L 380 270 Z" fill="#e2e8f0"/>
+                        <text x="400" y="410" font-size="24" fill="#2d3748" text-anchor="middle">Advanced Thermal Management</text>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="project-content-detail">
+                <h2>Project Overview</h2>
+                <p>
+                    Developed an advanced thermal management solution for a ruggedized electronics enclosure
+                    housing high-power computing equipment for military applications. The system needed to
+                    operate reliably in extreme environmental conditions while maintaining safe component
+                    temperatures without active cooling.
+                </p>
+
+                <h2>Technical Challenge</h2>
+                <p>
+                    The project presented several interconnected thermal challenges:
+                </p>
+                <ul>
+                    <li>1,200W heat dissipation requirement in sealed, dust-proof enclosure</li>
+                    <li>Ambient temperature range from -40°C to +50°C</li>
+                    <li>No active cooling permitted (fans/pumps unreliable in harsh environments)</li>
+                    <li>Component junction temperatures must stay below 85°C</li>
+                    <li>Tight space constraints (30cm x 40cm x 20cm enclosure)</li>
+                    <li>MIL-STD-810G compliance for shock, vibration, and environmental exposure</li>
+                    <li>Weight limitations for portable deployment</li>
+                </ul>
+
+                <h2>Approach & Methodology</h2>
+
+                <h3>1. Thermal Analysis & Modeling</h3>
+                <ul>
+                    <li>Characterized heat generation profiles for all electronic components</li>
+                    <li>Created detailed 3D thermal model in ANSYS Thermal (Steady-State and Transient)</li>
+                    <li>Performed CFD analysis in COMSOL to evaluate natural convection patterns</li>
+                    <li>Modeled radiation heat transfer from external surfaces</li>
+                    <li>Validated models against test measurements (thermal cameras, thermocouples)</li>
+                </ul>
+
+                <h3>2. Heat Transfer Solution Design</h3>
+                <ul>
+                    <li>Designed integrated heat pipe network for efficient heat spreading</li>
+                    <li>Optimized vapor chamber placement for high-power components</li>
+                    <li>Developed custom aluminum fin stack with optimized geometry</li>
+                    <li>Specified thermal interface materials (TIMs) for minimal contact resistance</li>
+                    <li>Designed conduction paths from internal components to external fins</li>
+                    <li>Applied high-emissivity coatings to maximize radiative heat transfer</li>
+                </ul>
+
+                <h3>3. Detailed Mechanical Design</h3>
+                <ul>
+                    <li>Created 3D CAD models in SolidWorks with full thermal-structural integration</li>
+                    <li>Performed structural analysis to ensure heat pipes withstand shock/vibration</li>
+                    <li>Designed mounting system with thermal isolation for sensitive components</li>
+                    <li>Optimized fin geometry using parametric studies (fin height, thickness, spacing)</li>
+                    <li>Incorporated thermal expansion analysis for multi-material assembly</li>
+                </ul>
+
+                <h3>4. Prototyping & Testing</h3>
+                <ul>
+                    <li>Fabricated prototypes using precision machining and brazing</li>
+                    <li>Conducted thermal testing in environmental chamber (-40°C to +50°C)</li>
+                    <li>Performed thermal imaging to identify hot spots and validate models</li>
+                    <li>Executed MIL-STD-810G qualification testing</li>
+                    <li>Measured long-term thermal performance and reliability</li>
+                </ul>
+
+                <h2>Tools & Software</h2>
+                <div class="tools-used">
+                    <span class="tool-tag">ANSYS Thermal</span>
+                    <span class="tool-tag">ANSYS Icepak</span>
+                    <span class="tool-tag">COMSOL Multiphysics</span>
+                    <span class="tool-tag">SolidWorks</span>
+                    <span class="tool-tag">Flow Simulation</span>
+                    <span class="tool-tag">MATLAB</span>
+                    <span class="tool-tag">FLIR Thermal Imaging</span>
+                </div>
+
+                <h2>Results & Impact</h2>
+                <div class="results-grid">
+                    <div class="result-card">
+                        <div class="result-number">40°C</div>
+                        <div class="result-label">Temperature Reduction</div>
+                        <p>Max component temp: 118°C → 78°C</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">99.8%</div>
+                        <div class="result-label">System Uptime</div>
+                        <p>Zero thermal-related failures in 18 months</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">15%</div>
+                        <div class="result-label">Weight Reduction</div>
+                        <p>Vs. initial conservative design approach</p>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">Full</div>
+                        <div class="result-label">MIL-STD-810G</div>
+                        <p>Passed all environmental qualification tests</p>
+                    </div>
+                </div>
+
+                <h2>Technical Deep Dive</h2>
+                <p>
+                    <strong>Heat Pipe Integration:</strong> The solution utilized six copper-water heat pipes
+                    (8mm diameter) embedded in a machined aluminum chassis. The heat pipes provided effective
+                    thermal conductivity of >50,000 W/m-K, far exceeding solid aluminum (200 W/m-K), enabling
+                    efficient heat spreading from concentrated sources to the large fin surface area.
+                </p>
+                <p>
+                    <strong>Fin Optimization:</strong> Using CFD-driven optimization, we determined the optimal
+                    fin geometry: 60mm height, 2mm thickness, 8mm spacing. This configuration maximized natural
+                    convection while remaining manufacturable through standard extrusion processes. The fins
+                    were oriented vertically to promote chimney effect for enhanced buoyancy-driven flow.
+                </p>
+                <p>
+                    <strong>Radiation Enhancement:</strong> Applied specialized high-emissivity coating (ε = 0.92)
+                    to external surfaces. At elevated temperatures, radiation becomes a significant heat transfer
+                    mechanism—this coating increased radiative heat dissipation by approximately 35% compared to
+                    bare aluminum (ε = 0.05).
+                </p>
+                <p>
+                    <strong>Thermal Interface Management:</strong> Specified graphite-based thermal interface
+                    materials with thermal conductivity of 5 W/m-K and optimized bondline thickness (0.1mm).
+                    Proper TIM selection and application technique was critical—poor interfaces can create
+                    thermal resistance comparable to several centimeters of aluminum.
+                </p>
+
+                <h2>Key Learnings</h2>
+                <p>
+                    This project demonstrated that passive thermal management can handle significant heat loads
+                    when physics-based design is rigorously applied. The key was maximizing all available heat
+                    transfer modes: conduction (heat pipes, optimized interfaces), convection (fin geometry,
+                    orientation), and radiation (surface treatments).
+                </p>
+                <p>
+                    Thermal modeling proved invaluable, but required careful validation. Our initial models
+                    under-predicted contact resistance at interfaces, highlighting the importance of experimental
+                    validation and model calibration. The final validated model became a powerful design tool
+                    for variant configurations.
+                </p>
+                <p>
+                    Collaboration with electronics designers from the project outset was essential. Component
+                    placement significantly impacts thermal performance—high-power components near thermal
+                    exits, sensitive components in cooler zones. This "thermal-aware" layout reduced peak
+                    temperatures by an additional 15°C beyond our heat sink optimization.
+                </p>
+            </div>
+
+            <div class="project-navigation">
+                <a href="project5.html" class="nav-btn">&larr; Previous Project</a>
+                <a href="../index.html#projects" class="nav-btn">All Projects</a>
+                <a href="project1.html" class="nav-btn">Next Project &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Philip Santiago. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
