@@ -397,6 +397,15 @@
   object-fit: cover;
   border-radius: 10px;
 }
+
+.project-imageflight img {
+
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 .project-imagetele img {
     margin-top: 40px;
     margin-left: 80px;
@@ -460,6 +469,22 @@
         gap: var(--spacing-lg);
         align-items: start;
       }
+
+      .project-card-flight {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--spacing-lg);
+    align-items: start;
+}
+
+.project-card-flight .project-imageflight {
+    grid-column: 1;
+}
+
+.project-card-flight .project-content {
+    grid-column: 2;
+    grid-row: 1 / 3;
+}
 
       .project-card:nth-child(even) .project-card-inner {
         direction: rtl;
@@ -825,14 +850,10 @@
             <h3>Experience</h3>
             <p>
               Hello! My name is Philip and I'm majoring in mechanical
-              engineering and minoring in computer science I specialize in
-              developing innovative solutions for complex engineering
-              challenges.
-            </p>
-            <p>
-              My expertise spans from initial concept development through
+              engineering and minoring in computer science. My expertise spans from initial concept development through
               detailed design, analysis, prototyping, and manufacturing.
             </p>
+            
           </div>
           <div class="skills-section">
             <div class="skills-category">
@@ -955,16 +976,22 @@
           <!-- Project 3 -->
           <div class="project-card">
             <div class="project-number">03</div>
-            <div class="project-card-inner">
+            <div class="project-card-flight">
               
-                <div class="project-image">
+                <div class="project-imageflight">
                     <img src="images/flight.png" alt="Project description">
                   </div>
+
+                  <div class="project-imageflight">
+                    <img src="images/wing.png" alt="Second project description">
+                </div>
+                
+                
               
               <div class="project-content">
                 <h3>Flight Club</h3>
                 <p>
-                    Designed and validated composite wing spar and rib structures using FEA, optimizing for weight reduction while meeting load requirements. Fabricated and integrated aileron control systems with servo actuation.
+                    Designed and validated composite wing spar and rib structures using FEA, optimizing for weight reduction while meeting load requirements. 
                 </p>
                 <div class="project-details">
                   <div class="detail-item">
@@ -1009,6 +1036,31 @@
             </div>
           </div>
 
+          <!-- Project 5 -->
+          <div class="project-card">
+            <div class="project-number">05</div>
+            <div class="project-card-inner">
+              <div class="project-imageme102">
+                <img src="images/helmet.png" alt="Project description">
+              </div>
+              <div class="project-content">
+                <h3>Current Project: ME 103 Product Realization</h3>
+                <p>
+                  Designing, prototyping, and manufacturing a medieval battle helmet through welding and metal casting.
+
+                </p>
+                <div class="project-details">
+                  
+                  <div class="detail-item">
+                    <strong>Tools:</strong> OnShape, Welding, Casting
+                  </div>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
 
     <section id="projects" class="projects section">
         <div class="container">
@@ -1033,7 +1085,7 @@
         <div class="projects-grid">
           <!-- Project 5 -->
           <div class="project-card">
-            <div class="project-number">05</div>
+            <div class="project-number">06</div>
             <div class="project-card-inner">
               <div class="project-imagetele">
                 <img src="images/telepathy.jpg" alt="Project description">
@@ -1066,7 +1118,7 @@
 
           <!-- Project 6 -->
           <div class="project-card">
-            <div class="project-number">06</div>
+            <div class="project-number">07</div>
             <div class="project-card-inner">
               <div class="project-image">
                 <img src="images/searchabledatabase.png" alt="Project description">
@@ -1096,7 +1148,7 @@
             <div class="container">
               <div class="projects-header">
                 <div class="section-header" style="margin-bottom: 0">
-                  <h2 class="section-title">Research Projects</h2>
+                  <h2 class="section-title">Research</h2>
                 </div>
                 <div class="scroll-indicator">
                   <svg
@@ -1114,7 +1166,7 @@
               <div class="projects-grid">
                 <!-- Project 7 -->
                 <div class="project-card">
-                  <div class="project-number">07</div>
+                  <div class="project-number">08</div>
                   <div class="project-card-inner">
                     <div class="project-imagesimr">
                       <img src="images/SIMR.jpg" alt="Project description">
@@ -1138,9 +1190,21 @@
 
 
            <!-- Project 8 -->
+           <div class="projects-grid">
            <div class="project-card">
-            <div class="project-number">08</div>
+            <div class="project-number">09</div>
             <div class="project-card-inner">
+                <div class="project-content">
+                    <h3>Energy Management System | CS238</h3>
+                    <p>
+                      Developed Markov process-based energy management system using sensor data (battery level, solar irradiance, weather) to optimize altitude decision making to extend flight time by maximizing solar energy capture.
+                    </p>
+                    <div class="project-details">
+                      <div class="detail-item">
+                        <strong>Tools:</strong> Python
+                      </div>
+                    </div>
+                  </div>
               <div class="project-image">
                 <iframe 
                   src="images/markov.pdf" 
@@ -1149,25 +1213,85 @@
                   style="border: 1px solid var(--color-border); border-radius: 10px;">
                 </iframe>
               </div>
-              <div class="project-content">
-                <h3>Energy Management System | CS238</h3>
-                <p>
-                  Developed Markov process-based energy management system using sensor data (battery level, solar irradiance, weather) to optimize altitude decision making to extend flight time by maximizing solar energy capture.
-                </p>
-                <div class="project-details">
-                  <div class="detail-item">
-                    <strong>Tools:</strong> Python
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
+        </div>
 
-    </section>
+         
 
 
-             
+    <section id="projects" class="projects section">
+        <div class="container">
+          <div class="projects-header">
+            <div class="section-header" style="margin-bottom: 0">
+              <h2 class="section-title">Leadership Inititives</h2>
+            </div>
+            <div class="scroll-indicator">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Project 7 -->
+          <div class="projects-grid">
+            <!-- Project 7 -->
+            <div class="project-card">
+              <div class="project-number">10</div>
+              <div class="project-card-inner">
+                <div class="project-imagesimr">
+                  <img src="images/bayamo.png" alt="Project description">
+                </div>
+                <div class="project-content">
+                  <h3>Founder and President of Project Bayamo</h3>
+                  <p>
+                    Coordinated international logistics to provide medicine for children in Cuba. Successfully petitioned PayPal under humanitarian aid exemptions. Recruited 100+ donors, and delivered 200 pounds of supplies to 60+ children.
+
+                  </p>
+                  <div class="project-details">
+                  
+                  </div>
+                  <a href="https://helpthekidsofbayamo.wordpress.com/" class="btn btn-secondary">Visit Website</a>
+                </div>
+              </div>
+            </div>
+
+      
+
+
+       <!-- Project 8 -->
+       <div class="project-card">
+        <div class="project-number">11</div>
+        <div class="project-card-inner">
+          <div class="project-image">
+            <img src="images/dream.png" alt="Project description">
+          </div>
+          <div class="project-content">
+            <h3>Founder and President of Dream Catchers Fundraiser</h3>
+            <p>
+                During the Summer of 2022, the members of the Leadership Economics and Entrepreneurship Club went door-to-door around Palo Alto and utilized social media outreach to gather support for the fundraiser, raising over $2200 to purchase TI-84 graphing calculators for the organization’s entire graduating class, equipping them for high school STEM courses.
+            </p>
+            <div class="project-details">
+            </div>
+            <a href="https://leadershipeconomicsandentrepreneurshipclub.org/" class="btn btn-secondary">Visit Website</a>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+       </div>
+
+
+     
 
 
     <!-- Footer -->
